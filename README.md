@@ -22,7 +22,7 @@ Hiper will only respond to JSON data containig the same appId as its own. Curren
 
 * Unmute
 
-This will increase device volume
+Increase device volume
 
 `{"app": "forceUnmute", "app_id": "xxxxxxxx"}`
 
