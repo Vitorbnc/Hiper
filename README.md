@@ -12,4 +12,6 @@ And the python package
 * paho-mqtt (from pip)
 
 ## Running
-Just run file *test.py*
+Just run file *test.py* with python 3:
+`python3 ./test.py`
+
