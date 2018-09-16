@@ -1,7 +1,11 @@
 # Hiper
 Fast Voice User Interface (VUI) for your smart devices that works even offline.
 
-This code is meant to be used with [Hiper Android app](https://play.google.com/store/apps/details?id=com.vitorbnc.hiper)
+This is the source code of the  [Hiper Android app](https://play.google.com/store/apps/details?id=com.vitorbnc.hiper)
+
+It is meant to be a real time voice over network bridge for your talking robot, smart coffee machine or whatever your project is.
+
+
 
 ## API
 Hiper works with JSON data. When user talks to Hiper, it publishes the following:
@@ -27,8 +31,8 @@ Increase device volume
 `{"app": "forceUnmute", "app_id": "xxxxxxxx"}`
 
 
-## Installation
-Clone this repository and run *install.sh* or manually install
+## Installation for testing
+Clone this repository, go to *test* folder and run *install.sh* or manually install
 * mosquitto
 * mosquitto-clients (for testing)
 
