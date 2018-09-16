@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vitorbnc.hiper.MainActivity">
+
+    <TextView
+        android:id="@+id/txtHiper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/welcome_text"
+        android:textColor="@color/text_output"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:text="                               "
+        android:textAlignment="textEnd"
+        android:textColor="@color/text_input"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/btnListen"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="113dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="startStopListening"
+        android:text="@string/start_listening"
+        android:textColor="@color/night_blue"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/btnStop"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="sendStop"
+        android:text="@string/stop"
+        android:textColor="@color/red_dark"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRemoteIP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/swCloudRecogtion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:text="@string/cloud_recognition"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        tools:checked="true" />
+
+    <EditText
+        android:id="@+id/txtRemoteIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="tcp://192.168.1.12"
+        app:layout_constraintBottom_toTopOf="@+id/txtTopic"
+        app:layout_constraintEnd_toStartOf="@+id/txtRemotePort"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtRemotePort"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="28dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1883"
+        app:layout_constraintBottom_toTopOf="@+id/txtTopic"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="hiper"
+        app:layout_constraintBottom_toTopOf="@+id/swCloudRecogtion"
+        app:layout_constraintStart_toStartOf="@+id/txtRemoteIP" />
+
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/btnConnection"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:onClick="toggleConnection"
+        android:text="@string/icon_disconnected"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRemotePort"
+        app:layout_constraintTop_toTopOf="@+id/txtTopic" />
+
+
+</android.support.constraint.ConstraintLayout>

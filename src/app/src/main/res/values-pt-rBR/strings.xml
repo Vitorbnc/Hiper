@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_text">Toque no microfone para falar</string>
+    <string name="offline_recognition">Reconhecimento Offline</string>
+    <string name="cloud_recognition">Reconhecimento Online</string>
+
+</resources>

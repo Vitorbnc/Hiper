@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">Hiper</string>
+    <string name="start_listening" translatable="false">{gmd-mic_off}</string>
+    <string name="stop_listening" translatable="false">{gmd-mic}</string>
+    <string name="icon_connected" translatable="false"> {gmd-compare_arrows}</string>
+    <string name="icon_disconnected" translatable="false"> {gmd-block}</string>
+    <string name="key_topic" translatable="false">topic</string>
+    <string name="key_remote_address" translatable="false">rem_addr</string>
+    <string name="key_remote_port" translatable="false">rem_port</string>
+    <string name="key_cloud_recognition" translatable="false">cloud_recog</string>
+    <string name="welcome_text">Tap the mic to speak</string>
+    <string name="offline_recognition">Offline Recognition</string>
+    <string name="cloud_recognition">Cloud Recognition</string>
+    <string name="stop" translatable="false">{gmd-stop}</string>
+
+
+</resources>
